@@ -4,20 +4,21 @@
    ============================================================ */
 
 :root{
-  --bg:            #08090b;
-  --bg-elevated:   #0f1114;
-  --bg-elevated-2: #15171b;
+  --bg:            #0d0f0d;
+  --bg-elevated:   #141613;
+  --bg-elevated-2: #1a1c18;
   --surface-glass: rgba(255,255,255,0.045);
   --surface-glass-strong: rgba(255,255,255,0.08);
   --border:        rgba(255,255,255,0.09);
   --border-strong: rgba(255,255,255,0.16);
 
-  --blue:        #2563EB;
-  --blue-light:  #6D9DFF;
-  --blue-dim:    #1E3A78;
-  --blue-glow:   rgba(37,99,235,0.45);
+  --blue:        #A3E635;
+  --blue-light:  #D2F27A;
+  --blue-dim:    #365314;
+  --blue-glow:   rgba(163,230,53,0.45);
+  --teal:        #2DD4BF;
 
-  --ink:         #F5F7FA;
+  --ink:         #F5F5F0;
   --ink-dim:     #B7BEC9;
   --ink-faint:   #757C88;
 
@@ -36,9 +37,9 @@
 }
 
 [data-theme="light"]{
-  --bg:            #F7F8FA;
+  --bg:            #F8FAF3;
   --bg-elevated:   #FFFFFF;
-  --bg-elevated-2: #EFF1F4;
+  --bg-elevated-2: #EEF3E2;
   --surface-glass: rgba(10,12,16,0.035);
   --surface-glass-strong: rgba(10,12,16,0.06);
   --border:        rgba(10,12,16,0.09);
@@ -48,7 +49,9 @@
   --ink-dim:     #4B5563;
   --ink-faint:   #8A93A0;
 
-  --blue-dim:    #DCE7FF;
+  --blue:        #65A30D;
+  --blue-light:  #4D7C0F;
+  --blue-dim:    #E9F5D0;
   color-scheme: light;
 }
 
@@ -138,7 +141,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .brand{ display:flex; align-items:center; gap:10px; font-family:'Clash Display',sans-serif; font-weight:600; font-size:18px; letter-spacing:-0.01em; }
 .brand-mark{
   width:26px; height:26px; border-radius:8px;
-  background:linear-gradient(135deg, var(--blue), #5B8DEF 60%, #8FB3FF);
+  background:linear-gradient(135deg, var(--blue), #65A30D 60%, var(--teal));
   box-shadow:0 0 20px var(--blue-glow);
   flex-shrink:0;
 }
@@ -182,8 +185,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   white-space:nowrap;
 }
 .btn-primary{
-  background:linear-gradient(135deg, var(--blue), #4C7DF0);
-  color:#fff;
+  background:linear-gradient(135deg, var(--blue), #84CC16);
+  color:#0d0f0d;
   box-shadow:0 1px 0 rgba(255,255,255,0.15) inset, 0 8px 24px -8px var(--blue-glow);
 }
 .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 1px 0 rgba(255,255,255,0.2) inset, 0 14px 32px -10px var(--blue-glow); }
@@ -224,7 +227,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .badge.live{ color:var(--success); border-color:rgba(52,211,153,0.35); background:rgba(52,211,153,0.08); }
 .badge.soon{ color:var(--amber); border-color:rgba(245,185,66,0.35); background:rgba(245,185,66,0.08); }
 .badge.future{ color:var(--ink-faint); }
-.badge.blue{ color:var(--blue-light); border-color:rgba(37,99,235,0.35); background:rgba(37,99,235,0.08); }
+.badge.blue{ color:var(--blue-light); border-color:rgba(163,230,53,0.35); background:rgba(163,230,53,0.08); }
 
 /* ---------------- GRID HELPERS ---------------- */
 .grid{ display:grid; gap:20px; }
